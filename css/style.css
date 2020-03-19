@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    padding: 20px 0;
+    box-shadow: rgb(0, 0, 0) 0px -3px 50px;
+}
+.header-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-text{
+    font-size: 600%;
+    font-weight: 900;
+    text-shadow: rgb(0, 0, 0) 5px -5px 100px;
+}
+.info{
+    display: flex;
+    min-height: 90vh;
+}
+.info-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info-text{
+    color: black;
+    font-size: 130%;
+}
+.arcade{
+    background-image: url(../img/arcade-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 50vh;
+    box-shadow: black 0px 5px 50px;
+    box-shadow: black 0px -5px 50px;
+}
+.arcade-body, .strategy-body, .race-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.arcade-text, .strategy-text, .race-text{
+    font-size: 300%;
+    font-weight: 900;
+    text-shadow: black 5px -5px 100px;
+}
+.arcade-box{
+    display: flex;
+    min-height: 100vh;
+}
+.arcade-box-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.strategy{
+    background-image: url(../img/strategy-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 50vh;
+    box-shadow: black 0px 5px 50px;
+    box-shadow: black 0px -5px 50px;
+}
+.strategy-box{
+    -background: rgb(0, 0, 0);
+    display: flex;
+    min-height: 100vh;
+    -padding: 20px 0;
+}
+.strategy-box-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.strategy-text{
+    color: white;
+}
+.race{
+    background-image: url(../img/race-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 50vh;
+    box-shadow: black 0px 5px 50px;
+    box-shadow: black 0px -5px 50px;
+}
+.race-box{
+    display: flex;
+    min-height: 100vh;
+}
+.race-box-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.race-text{
+    color: white;
+}
+.footer{
+    background: #666;
+    display: flex;
+    min-height: 50px;
+    padding: 20px 0;
+}
+.footer-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-text{
+    color: white;
+    font-size: 90%;
+}
+.button-img{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: unset;
+    font-size: 230%;
+    -margin: auto;
+    margin: auto 5% auto 5%;
+}
+.img-box{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+img{
+    border: black solid 5px;
+    margin: 0 5% 0 5%;
+    width: 30%;
+    box-shadow: black 1px -5px 100px;
+}
