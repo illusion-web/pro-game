@@ -1,2 +1,2 @@
 # pro-game 
-illusion-web.github.io/pro-game
+https://illusion-web.github.io/pro-game/
