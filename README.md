@@ -1,2 +1,2 @@
 # pro-game 
-https://illusion-web.github.io/pro-game/
+ https://webdev-yaroslav.github.io/pro-game/
