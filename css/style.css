@@ -171,7 +171,7 @@ body{
 .action-box{
     -background: rgb(0, 0, 0);
     display: flex;
-    min-height: 100vh;
+    min-height: 75vh;
     -padding: 20px 0;
 }
 .action-box-body{
