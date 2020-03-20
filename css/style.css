@@ -157,6 +157,37 @@ body{
 .race-text{
     color: white;
 }
+
+.action{
+    background-image: url(../img/action-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 50vh;
+    box-shadow: black 0px 5px 50px;
+    box-shadow: black 0px -5px 50px;
+}
+.action-box{
+    -background: rgb(0, 0, 0);
+    display: flex;
+    min-height: 100vh;
+    -padding: 20px 0;
+}
+.action-box-body{
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.action-text{
+    color: white;
+}
+
 .footer{
     background: #666;
     display: flex;
