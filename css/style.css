@@ -9,14 +9,12 @@
 
 html,
 body{
-    height: 100%;
     background-color:white;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 20px;
 }
 .wrapper{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -27,13 +25,9 @@ body{
     background-position: center;
     display: flex;
     min-height: 100vh;
-    padding: 20px 0;
     box-shadow: rgb(0, 0, 0) 0px -3px 50px;
 }
 .header-body{
-    flex: 1 1 auto;
-    width: 100%;
-    max-width: 1000px;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -52,7 +46,6 @@ body{
 .info-body{
     flex: 1 1 auto;
     width: 100%;
-    max-width: 1000px;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -73,17 +66,16 @@ body{
     box-shadow: black 0px 5px 50px;
     box-shadow: black 0px -5px 50px;
 }
-.arcade-body, .strategy-body, .race-body{
+.arcade-body, .strategy-body, .race-body, .action-body{
     flex: 1 1 auto;
     width: 100%;
-    max-width: 1000px;
     margin: 0px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.arcade-text, .strategy-text, .race-text{
+.arcade-text, .strategy-text, .race-text, .action-text{
     font-size: 300%;
     font-weight: 900;
     text-shadow: black 5px -5px 100px;
@@ -95,7 +87,6 @@ body{
 .arcade-box-body{
     flex: 1 1 auto;
     width: 100%;
-    max-width: 900px;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -113,15 +104,12 @@ body{
     box-shadow: black 0px -5px 50px;
 }
 .strategy-box{
-    -background: rgb(0, 0, 0);
     display: flex;
     min-height: 75vh;
-    -padding: 20px 0;
 }
 .strategy-box-body{
     flex: 1 1 auto;
     width: 100%;
-    max-width: 900px;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -148,7 +136,6 @@ body{
 .race-box-body{
     flex: 1 1 auto;
     width: 100%;
-    max-width: 900px;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -160,7 +147,7 @@ body{
 }
 
 .action{
-    background-image: url(../img/action-background.jpg);
+    background-image: url(../img/action-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -178,7 +165,6 @@ body{
 .action-box-body{
     flex: 1 1 auto;
     width: 100%;
-    max-width: 900px;
     margin: 0px auto;
     text-align: center;
     display: flex;
@@ -222,7 +208,6 @@ button{
     border-radius: 50%;
     background-color: unset;
     font-size: 230%;
-    -margin: auto;
     margin: auto 5% auto 5%;
 }
 .img-box{
@@ -234,8 +219,53 @@ button{
 
 }
 img{
+    width: 200px;
+    height: 284px;
     border: black solid 5px;
     margin: 0 5% 0 5%;
-    width: 30%;
     box-shadow: black 1px -5px 100px;
+}
+@media (max-width: 970px){
+    img{
+        margin: 5% 5% 5% 5%;
+    }
+    .img-box{
+        display: inline;
+        margin: 5% 0 5% 0;
+    }
+}
+@media (max-width: 420px){
+    .header-text{
+        font-size: 400%;
+    }
+    .info-text {
+        font-size: 100%;
+    }
+    .arcade-text, .strategy-text, .race-text, .action-text {
+        font-size: 200%;
+    }
+    .info{
+        min-height: 70vh;
+    }
+    .arcade, .strategy, .race, .action {
+        min-height: 40vh;
+    }
+    .button-img{
+        flex-direction: column;
+    }
+    .img-box{
+        flex-direction: column;
+    }
+    img{
+        margin: 5% auto 5% auto;
+        height: 50%;
+        width: 50%;
+    }
+    button{
+        margin: 5% auto 5% auto;
+        transform: rotate(90deg);
+    }
+    .footer-text {
+        font-size: 60%;
+    }
 }
